@@ -11,8 +11,8 @@
           revision="ten-plus"
           review="gerrit.pixelexperience.org" />
 
-  <remote name="pixel-devices"
-          fetch="https://github.com/PixelExperience-Devices"
+  <remote name="moon"
+          fetch="https://github.com/MoonOS-Project"
           revision="ten" />
 
   <remote name="pixel-gitlab"
@@ -60,7 +60,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="pixel" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixel-plus" />
+  <project path="frameworks/base" name="frameworks_base" remote="moon" />
   <project path="frameworks/native" name="frameworks_native" remote="pixel-plus" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
@@ -69,7 +69,7 @@
   <!-- General repos -->
   <project path="art" name="art" remote="pixel" />
   <project path="bionic" name="bionic" remote="pixel" />
-  <project path="build/make" name="build" remote="pixel-plus">
+  <project path="build/make" name="build" remote="moon">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -78,19 +78,19 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="pixel" >
+  <project path="build/soong" name="build_soong" remote="moon" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="build/blueprint" name="build_blueprint" remote="pixel" />
   <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
   <project path="development" name="development" remote="pixel" />
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel" />
-  <project path="manifest" name="manifest" remote="pixel-plus" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="moon" />
+  <project path="manifest" name="manifest" remote="moon" />
   <project path="platform_testing" name="platform_testing" remote="pixel" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pixel-plus" />
+  <project path="vendor/moon" name="vendor_moon" remote="moon" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
-  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="pixel" />
+  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="moon" />
   <project path="vendor/google/customization" name="vendor_google_customization" remote="pixel" />
 
   <!-- Hardware repos -->
@@ -115,7 +115,7 @@
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
   <project path="packages/apps/Recorder" name="packages_apps_Recorder" remote="pixel" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixel-plus" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="moon" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="pixel" />
