@@ -81,6 +81,7 @@
   <project path="external/tinyalsa" name="external_tinyalsa" remote="pixel" />
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
   <project path="external/toybox" name="external_toybox" remote="pixel" />
+  <project path="external/motorola/faceunlock" name="zjunior06/external_motorola_faceunlock" remote="gitlab" revision="11"/>
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="pixel" />
